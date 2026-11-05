@@ -33,7 +33,7 @@ DOLPHIN PHONE STORE는 돌고래를 콘셉트로 제작한 가상의 스마트�
 - **프로젝트명:** DOLPHIN PHONE STORE
 - **제작자:** junheegom
 - **개발 언어:** HTML
-- **사이트 링크:** junheegom-hub.github.io/false-dolphin-store
+- **사이트 링크:** https://junheegom-hub.github.io/false-dolphin-store/
 ---
 
 🐬 **DOLPHIN PHONE STORE**
