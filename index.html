@@ -4,186 +4,280 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>DOLPHIN PHONE STORE</title>
+
+<meta name="theme-color" content="#073653">
+<meta name="description" content="가짜 돌고래 스토어">
+
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" href="/icons/icon-192.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/icons/icon-192.svg">
+
 <style>
-*{box-sizing:border-box}
-body{
- margin:0;
- font-family:Arial,sans-serif;
- background:#f0fbff;
- color:#10344a;
+* {
+  box-sizing: border-box;
 }
-header{
- background:#073653;
- color:white;
- padding:20px;
- display:flex;
- justify-content:space-between;
- align-items:center;
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f0fbff;
+  color: #10344a;
 }
-header h2{margin:0}
-nav a{
- color:white;
- text-decoration:none;
- margin:8px;
+
+header {
+  background: #073653;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.hero{
- background:linear-gradient(120deg,#075078,#20b9bd);
- color:white;
- text-align:center;
- padding:75px 20px;
+
+header h2 {
+  margin: 0;
 }
-.hero h1{font-size:45px}
-.hero .dolphin{font-size:100px}
-.hero button{
- padding:14px 25px;
- border:0;
- border-radius:30px;
- background:#b5fff0;
- color:#073653;
- font-weight:bold;
- cursor:pointer;
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 8px;
 }
-h2.title{text-align:center;margin-top:50px}
-.products{
- display:grid;
- grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
- gap:20px;
- padding:25px;
- max-width:1000px;
- margin:auto;
+
+.hero {
+  background: linear-gradient(120deg, #075078, #20b9bd);
+  color: white;
+  text-align: center;
+  padding: 75px 20px;
 }
-.card{
- background:white;
- border-radius:20px;
- padding:20px;
- text-align:center;
- box-shadow:0 5px 20px #b8dce8;
+
+.hero h1 {
+  font-size: 45px;
 }
-.phone{
- margin:15px auto;
- width:100px;
- height:175px;
- border:6px solid #c6dce8;
- border-radius:23px;
- background:linear-gradient(145deg,#a9f5ed,#2588bd);
- display:grid;
- place-items:center;
- font-size:55px;
+
+.hero .dolphin {
+  font-size: 100px;
 }
-.pink{background:linear-gradient(145deg,#ffd9ef,#e77bb8)}
-.moon{background:linear-gradient(145deg,#dce5ff,#536da8)}
-.price{font-weight:bold;font-size:20px}
-.card button{
- background:#073653;
- color:white;
- border:0;
- padding:12px 20px;
- border-radius:20px;
- cursor:pointer;
+
+.hero button {
+  padding: 14px 25px;
+  border: 0;
+  border-radius: 30px;
+  background: #b5fff0;
+  color: #073653;
+  font-weight: bold;
+  cursor: pointer;
 }
-.about{
- background:#d8f8f5;
- padding:40px 20px;
- text-align:center;
- margin-top:50px;
+
+h2.title {
+  text-align: center;
+  margin-top: 50px;
 }
-footer{
- background:#073653;
- color:white;
- padding:25px;
- text-align:center;
- margin-top:50px;
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 25px;
+  max-width: 1000px;
+  margin: auto;
 }
-#message{
- position:fixed;
- bottom:20px;
- left:50%;
- transform:translateX(-50%);
- background:#073653;
- color:white;
- padding:14px 22px;
- border-radius:30px;
- display:none;
+
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 5px 20px #b8dce8;
+}
+
+.phone {
+  margin: 15px auto;
+  width: 100px;
+  height: 175px;
+  border: 6px solid #c6dce8;
+  border-radius: 23px;
+  background: linear-gradient(145deg, #a9f5ed, #2588bd);
+  display: grid;
+  place-items: center;
+  font-size: 55px;
+}
+
+.pink {
+  background: linear-gradient(145deg, #ffd9ef, #e77bb8);
+}
+
+.moon {
+  background: linear-gradient(145deg, #dce5ff, #536da8);
+}
+
+.price {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.card button {
+  background: #073653;
+  color: white;
+  border: 0;
+  padding: 12px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.about {
+  background: #d8f8f5;
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+footer {
+  background: #073653;
+  color: white;
+  padding: 25px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#message {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #073653;
+  color: white;
+  padding: 14px 22px;
+  border-radius: 30px;
+  display: none;
+  max-width: 90%;
+  text-align: center;
 }
 </style>
 </head>
+
 <body>
 
 <header>
-<h2>🐬 DOLPHIN PHONE</h2>
-<nav>
-<a href="#products">제품</a>
-<a href="#about">브랜드</a>
-</nav>
+  <h2>🐬 DOLPHIN PHONE</h2>
+
+  <nav>
+    <a href="#products">제품</a>
+    <a href="#about">브랜드</a>
+  </nav>
 </header>
 
 <section class="hero">
-<div class="dolphin">🐬</div>
-<h1>HELLO, DOLPHIN!</h1>
-<p>바다의 감성을 담은 특별한 스마트폰</p>
-<button onclick="document.querySelector('#products').scrollIntoView({behavior:'smooth'})">
-제품 구경하기
-</button>
+  <div class="dolphin">🐬</div>
+
+  <h1>HELLO, DOLPHIN!</h1>
+
+  <p>바다의 감성을 담은 특별한 스마트폰</p>
+
+  <button onclick="document.querySelector('#products').scrollIntoView({behavior:'smooth'})">
+    제품 구경하기
+  </button>
 </section>
 
 <h2 class="title" id="products">OUR PRODUCTS</h2>
 
 <div class="products">
 
-<div class="card">
-<div class="phone">🐬</div>
-<h3>Dolphin Phone Aqua</h3>
-<p>시원한 아쿠아 블루 에디션</p>
-<p class="price">₩890,000</p>
-<button onclick="add('Aqua')">장바구니 담기</button>
-</div>
+  <div class="card">
+    <div class="phone">🐬</div>
 
-<div class="card">
-<div class="phone pink">🐬</div>
-<h3>Dolphin Phone Pink</h3>
-<p>사랑스러운 핑크 에디션</p>
-<p class="price">₩950,000</p>
-<button onclick="add('Pink')">장바구니 담기</button>
-</div>
+    <h3>Dolphin Phone Aqua</h3>
 
-<div class="card">
-<div class="phone moon">🐬</div>
-<h3>Dolphin Phone Moon</h3>
-<p>신비로운 달빛 에디션</p>
-<p class="price">₩1,090,000</p>
-<button onclick="add('Moon')">장바구니 담기</button>
-</div>
+    <p>시원한 아쿠아 블루 에디션</p>
+
+    <p class="price">₩890,000</p>
+
+    <button onclick="add('Aqua')">
+      장바구니 담기
+    </button>
+  </div>
+
+  <div class="card">
+    <div class="phone pink">🐬</div>
+
+    <h3>Dolphin Phone Pink</h3>
+
+    <p>사랑스러운 핑크 에디션</p>
+
+    <p class="price">₩950,000</p>
+
+    <button onclick="add('Pink')">
+      장바구니 담기
+    </button>
+  </div>
+
+  <div class="card">
+    <div class="phone moon">🐬</div>
+
+    <h3>Dolphin Phone Moon</h3>
+
+    <p>신비로운 달빛 에디션</p>
+
+    <p class="price">₩1,090,000</p>
+
+    <button onclick="add('Moon')">
+      장바구니 담기
+    </button>
+  </div>
 
 </div>
 
 <section class="about" id="about">
-<h2>🌊 ABOUT DOLPHIN PHONE</h2>
-<p>돌고래를 사랑하는 사람들을 위한 가상의 스마트폰 브랜드입니다.</p>
-<p>나만의 바다를 손안에서 만나보세요!</p>
+  <h2>🌊 ABOUT DOLPHIN PHONE</h2>
+
+  <p>
+    돌고래를 사랑하는 사람들을 위한
+    가상의 스마트폰 브랜드입니다.
+  </p>
+
+  <p>나만의 바다를 손안에서 만나보세요!</p>
 </section>
 
 <footer>
-<h2>🐬 DOLPHIN PHONE STORE</h2>
-<p>상상으로 만든 가상의 스마트폰 스토어</p>
-<p>© 2026 DOLPHIN PHONE</p>
+  <h2>🐬 DOLPHIN PHONE STORE</h2>
+
+  <p>상상으로 만든 가상의 스마트폰 스토어</p>
+
+  <p>© 2026 DOLPHIN PHONE</p>
 </footer>
 
 <div id="message"></div>
 
 <script>
-let cart=0;
+let cart = 0;
 
-function add(name){
- cart++;
- const message=document.getElementById('message');
- message.textContent=name+' 제품이 장바구니에 담겼어요! 🐬 ('+cart+'개)';
- message.style.display='block';
+function add(name) {
+  cart++;
 
- clearTimeout(window.timer);
- window.timer=setTimeout(()=>{
- message.style.display='none';
- },2000);
+  const message = document.getElementById('message');
+
+  message.textContent =
+    name + ' 제품이 장바구니에 담겼어요! 🐬 (' + cart + '개)';
+
+  message.style.display = 'block';
+
+  clearTimeout(window.timer);
+
+  window.timer = setTimeout(() => {
+    message.style.display = 'none';
+  }, 2000);
+}
+
+// PWA 서비스 워커 등록
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/service-worker.js')
+      .catch(error => {
+        console.error('서비스 워커 등록 실패:', error);
+      });
+  });
 }
 </script>
 
